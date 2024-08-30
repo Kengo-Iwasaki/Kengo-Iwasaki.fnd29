@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <script type="text/javascript" src="script.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>final</title>
+</head>
+
+<body>
+  <h1>Kingdom of Nim</h1>
+
+  <h2>あなたは王様です。相手の王様の国と自分の国で訓練をすることになりました。</h2>
+  <h2>ただ訓練をしてもつまらない、そう考えたあなたは、こんなゲームを提案しました。</h2>
+  <h2>「お互いの兵士をごちゃまぜにして一列に並ばせ、前から順番にとっていこう。そうして作った軍で最後に勝負しようじゃないか」</h2>
+  <h2>こうして少し特殊な訓練が始まるのでした…</h2>
+  
+  <ul>
+    <li id="top">以下中央列に並んでいるのは、<span id="roule">1番目を前として、</span>順に並んだ兵士です。</li>
+    <li>兵士の強さは同じではありません。<span id="roule">数字の大きい兵ほど強い兵士です。</span></li>
+    <li>ボタンを押し、お互いに<span id="roule">3手1セット</span>で取る兵士の数を決めます。</li>
+    <li>この時、<span id="roule">3手はまとめて選び、それぞれ1~3の数字を1回ずつ選ぶ(半角で数字指定)</span>ようにします。</li>
+    <li>お互いに3手決めたら選んだ数字と同じ数だけの兵士を取ります。この時、<span id="roule">あなた→相手→あなた…と1手ずつ、3回繰り返します。</span></li>
+    <li>1セット終わるとオブジェクトが更新されます。またボタンを押して3手選びましょう。</li>
+    <li>取れる兵士がいなくなったらいざ勝負。<span id="roule">兵士の強さの合計値が高い方が勝ち</span>ます。</li>
+  </ul>
+
+  <div class="rate">
+    <div class="inputfield">
+      <div>
+        <h3>強さ：1</h3>
+        <img id="strong1" src="兵士1.png">
+      </div>
+      
+      <div>
+        <h3>強さ：2</h3>
+        <img id="strong2" src="兵士2.png">
+      </div>
+      
+      <div>
+        <h3>強さ：3</h3>
+        <img id="strong3" src="兵士3.png">
+      </div>
+      
+      <div>
+        <h2>1手目！</h2>
+        <input id="input1" type="number" />
+      </div>
+
+      <div>
+        <h2>2手目！</h2>
+        <input id="input2" type="number" />
+      </div>
+
+      <div>
+        <h2>3手目！</h2>
+        <input id="input3" type="number" />
+      </div>
+
+      <div>
+        <h2>3手決めたらクリック！</h2>
+        <input id="button" type="button" onclick="suutori(field);" value="ゲームスタート！" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="player">
+    <div id="P">
+      <img id="character" src="王様P.png">
+      <li id="PP">自国の戦力: 0</li>
+    </div>
+
+    <div id="E">
+      <img id="character" src="王様E.png">
+      <li id="EP">相手国の戦力: 0</li>
+    </div>
+  </div>
+  <h3 id="judge"></h3>
+
+  <p>
+  <h3 id="graph"></h3>
+  </p>
+  
+  <script>field = fieldSet();</script>
+  <script>graph = fieldGraph(field);</script>
+</body>
+
+</html>
