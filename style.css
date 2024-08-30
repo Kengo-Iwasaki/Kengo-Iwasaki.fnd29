@@ -1,0 +1,177 @@
+body {
+  background-color: rgb(47, 255, 168);
+  font-size: 200%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1000%;
+  font-family: 'Courier';
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+  white-space: nowrap;
+}
+
+ul {
+  font-size: 200%;
+  text-align: left;
+  padding-left: 3em;
+
+}
+
+#top {
+  margin-top: 100px;
+}
+
+#roule {
+  color: red;
+  font-weight: bold;
+}
+
+.rate {
+  background-color: aquamarine;
+  position: sticky;
+  top: 20px;
+  white-space: nowrap;
+  display: flex;
+  z-index: 1;
+}
+
+.inputfield {
+  margin: 0 auto;
+  display: flex;
+}
+
+#strong1 {
+  width: 200px;
+  height: auto;
+}
+
+#strong2 {
+
+  width: 200px;
+  height: auto;
+}
+
+#strong3 {
+  width: 200px;
+  height: auto;
+}
+
+#input1 {
+  width: 500px;
+  height: 200px;
+  font-size: 150px;
+}
+
+#input2 {
+  width: 500px;
+  height: 200px;
+  font-size: 150px;
+}
+
+#input3 {
+  width: 500px;
+  height: 200px;
+  font-size: 150px;
+}
+
+#button {
+  width: 1000px;
+  height: 150px;
+  font-size: 100px;
+}
+
+.player {
+  display: flex;
+  position: sticky;
+  top: 500px;
+}
+
+#character {
+  width: 500px;
+  height: auto;
+  white-space: nowrap;
+  animation: yoboyobo 0.5s ease-in-out infinite alternate;
+  background: no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s linear;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+@keyframes yoboyobo {
+  0% {
+    transform: translate(10px, 0)
+  }
+
+  50% {
+    transform: translate(0, 0)
+  }
+
+  100% {
+    transform: translate(-10px, 0)
+  }
+}
+
+#P {
+  position: absolute;
+  left: 300px;
+  font-size: 50px;
+  z-index: auto;
+}
+
+#E {
+  position: absolute;
+
+  right: 300px;
+  font-size: 50px;
+}
+
+#judge {
+  text-align: center;
+  font-size: 100px;
+}
+
+#graph {
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+#heishi {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+#fuwafuwa {
+  white-space: nowrap;
+  animation: fuwafuwa 2s ease-in-out infinite alternate;
+  background: no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s linear;
+  width: 300px;
+  height: auto;
+  margin-top: 15px;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(0, -60px)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
